@@ -1,0 +1,533 @@
+
+/* Hides scrollbar for WebKit browsers like Chrome and Safari */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    background-color: #DFDEDA;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul li{
+    list-style: none;
+    display: inline;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+
+#navigation_bar{
+    background-color: #DFDEDA;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 50%); /* Horizontal offset, vertical offset, blur radius, color */
+
+}
+
+.navigation_bar_container{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #DFDEDA;
+}
+
+.menu_options{
+    height: 5rem;
+    width: 5rem;
+}
+
+.navigation_bar_container button{
+    padding: 10px;
+    font-size: 1.3rem;
+    color: #1F1F1F;;
+    border: 0;
+    background-color: #DFDEDA;
+}
+
+.menu_option{
+    width: 50%;
+    height: 100vh;
+    position: fixed;    /* Fixed positioning to stay visible on scroll */
+    top: 0;             /* Start from the top */
+    width: 50%;         /* Take 50% of the viewport width */
+    background-color: #1F1F1F;    
+    z-index: 1000;      /* High z-index to overlay on top of other content */
+    overflow-y: auto;   /* Enable vertical scrolling */
+    display: flex;
+   
+}
+
+.menu_option ul{
+    padding: 0;
+    margin: 0;
+
+}
+.menu_option ul li a{
+    color: #DFDEDA;
+    padding: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+}
+
+.navigation_menu_off{
+    padding: 10px;
+    font-size: 1.3rem;
+    color: #DFDEDA;
+    border: 0;
+    background-color: #1F1F1F; 
+}
+
+.toggle_off{
+    padding:10px;
+    display: flex ;
+    justify-content: end;
+}
+
+
+.menu_socials{
+    padding-top: 20px;
+}
+.menu_socials h6{
+    color: #DFDEDA;
+    font-size: 1rem;
+    padding: 10px;
+
+}
+
+
+.home_content{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.content_container .intro h2{
+    font-family: "Pacifico";
+    color: #1F1F1F; 
+
+}
+
+.content_container .name h1{
+    font-weight:900;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: #1F1F1F; 
+}
+
+.surname{
+    color: #DFDEDA;
+    -webkit-text-stroke-width: 1px; /* Width of the stroke */
+    -webkit-text-stroke-color: black; /* Color of the stroke */
+}
+
+
+.content_container .role p{
+    letter-spacing: 1px;
+    font-weight: 500;
+
+}
+
+.options button{
+    border: 2px solid #ED5E3E;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
+}
+
+.get_in_touch{
+    color: #ffffff;
+    background-color: #ED5E3E;
+
+
+}
+
+.dl_cv{
+    color: #1F1F1F;
+    background-color: #DFDEDA;
+    
+}
+
+
+#about_me{
+    background-color: #1F1F1F;
+
+}
+
+.about_content {
+    min-height: 90vh;
+    color: #DFDEDA;
+
+}
+
+.about_title {
+    position: relative; /* Add position relative here */
+}
+
+.about_title h3{
+    color: #DFDEDA;
+    letter-spacing: 1px;
+}
+
+.about_title h3::after{
+    content: '';
+    background-color: #ED5E3E;
+    height: 4px;
+    width: 100px; 
+    position: absolute;
+    left: 0;
+    bottom: -10px; 
+}
+
+.college{
+    text-align: justify;
+}
+
+
+#skills{
+    min-height: 90vh;
+}
+
+
+.skill_title_container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.skill_title_container .skill_title h3{
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-right: 10px;
+    margin-bottom: 5px; /* Adds some space between the text and the line */
+}
+.title_with_line{
+    position: relative;
+   
+}
+
+
+.title_with_line h3::after{
+    content: '';
+    background-color: #ED5E3E;
+    height: 4px;
+    width: 100px; 
+    position: absolute;
+    left: 0;
+    bottom: -10px; 
+}
+
+.skill_title h2{
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin-top: 5px;
+}
+
+.skill_title p{
+    text-align: justify;
+    letter-spacing: 1px;
+}
+.skill_title  h1{
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+.front_end, .backend{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skillset{
+    border: 1px solid white;
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: .4rem;
+    width: 150px;
+
+    
+}
+
+.skillset .logo i, .skillset .logo img{
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    width: 25px; /* Adjust the width as needed */
+    height: 25px; /* Adjust the height as needed */}
+
+.partition{
+    width: 1px;
+    background-color: white;
+}
+
+.language p{
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.fa-html5{
+    color: #ED5E3E;
+}
+
+.fa-css3-alt{
+    color: #264DE4;
+}
+.fa-js{
+    color: #D4B830;
+}
+
+.fa-figma{
+    color: rgb(88, 25, 88);
+    font-weight: 600;
+}
+
+
+.fa-bootstrap{
+    color: #7D12F8;
+}
+
+.fa-eye-dropper{
+    color: rgb(95, 25, 25);
+}
+
+.fa-php{
+    color: #5B617D;
+}
+
+#projects{
+    background-color: #1F1F1F; 
+
+
+}
+
+.project{
+    background-color: #DFDEDA;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+
+
+
+.project_image{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 100%;
+    height: 200px;
+}
+
+.project_image img{
+    width: 100%;
+    height: 100%;
+    background-color:#c5c5c5;
+    padding: 1rem 1rem 0 1rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+
+
+}
+
+.project_title{
+    padding: .7rem .7rem 0 .7rem;
+}
+
+.project_title p{
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.project_description{
+    font-size: .9rem;
+    font-weight: 600;
+    padding: 0 .7rem 0 .7rem;
+    letter-spacing: 1px;
+}
+
+.project_description p{
+    margin-bottom: 5px;
+
+}
+
+.tech_used{
+    font-size: .9rem;
+    font-weight: 600;
+    padding: 0 .7rem 0 .7rem;
+    letter-spacing: 1px;
+}
+
+.tech_used span{
+    font-size: .9rem;
+    font-family: "Consolas";
+    font-weight: 600;
+    padding: 0 .7rem 0 .7rem;
+    letter-spacing: 1px;
+    border-radius: .4rem;
+}
+
+.tech_used .PHP{
+    background-color: #787CB5;
+}
+
+
+.HTML {
+    background-color: #E34F26;
+    
+}
+
+.Javascript {
+    background-color: #F0DB4F;
+   
+}
+
+
+.React {
+    background-color: #61DAFB;
+   
+}
+
+.CSS{
+    background-color: #264DE4;
+    color: #DFDEDA;
+}
+
+
+.MySQL {
+    background-color: #0f96b5;
+    
+}
+
+.view_more{
+    padding: 0 .7rem 10px .7rem;
+
+}
+.view_more a{
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+   
+}
+
+
+.VB{
+    background-color: #003A70;
+    color: white;
+}
+
+.Access{
+    background-color: #4d6ab9;
+}
+
+.Adobe{
+    background-color: #31A8FF;
+}
+
+.project_content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+.contact_content{
+    min-height: 50vh;
+    align-items: center;
+    display: flex;
+    
+}
+
+
+.contact_content .texts p{
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.contact_content .texts h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+footer .texts{
+    font-size: .9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+footer .texts span{
+    font-weight: 600;
+}
+.orange{
+    color:#E34F26;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline-block;
+    
+}
+
+footer .socials{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+
+}
+
+footer  .socials i{
+    color: #1F1F1F;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+
+
+
+
+@media (max-width: 575px) {
+    .home_content .right_design{
+        display: none;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .home_content .right_design{
+        display: none;
+    }
+}
+
+img{
+    width: 50px;
+    height: 50px;
+
+
+}
